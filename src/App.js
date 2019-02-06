@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import { Button } from 'antd';
-import './App.css';
-
+import './App.less';
+import { Layout , Menu, Breadcrumb} from 'antd';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Movie from './components/movie/Movie';
+const {
+  Header, Footer, Sider, Content,
+} = Layout;
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <Button type="primary">按钮1</Button>
-        </header>
-      </div>
+      <Layout className="layout">
+        <Header>
+          <Home title='我是爸爸'></Home>
+        </Header>
+        <Content style={{ padding: '0 50px' }}>
+
+        </Content>
+        <Footer style={{ textAlign: 'center' }}>
+          Ant Design ©2018 Created by Ant UED
+        </Footer>
+      </Layout>
     );
   }
 }
