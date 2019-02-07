@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
 export default class Home extends Component {
-  constructor(props){
-    super(props)
-  }
+  // constructor(props){
+  //   super(props)
+  // }
   render() {
     return (
       <div>
-        {this.props.title}
+        首页
       </div>
     )
   }
