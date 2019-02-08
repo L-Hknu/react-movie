@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import logo from './logo.svg';
 import { Button, Divider } from 'antd';
+// import './App.css';
 import './App.less';
 import { Layout , Menu, Breadcrumb} from 'antd';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Movie from './components/movie/Movie';
-import One from './router/router'
 
 const {
   Header, Footer, Sider, Content,
@@ -35,9 +35,9 @@ class App extends Component {
               <Route path='/movie' component={Movie}></Route>
               <Route path='/ahout' component={About}></Route>
           </Content>
-          <Footer style={{ textAlign: 'center' }}>
+          {/* <Footer style={{ textAlign: 'center' }}>
             Ant Design ©2018 Created by Ant UED
-          </Footer>
+          </Footer> */}
         </Layout>
       </Router>
       </div>

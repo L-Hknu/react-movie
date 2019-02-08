@@ -1,44 +1,42 @@
 html,body{
 	height: 100%;
 }
-//把我们自己的样式都包裹在root容器里面 root渲染根元素 而且id优先级高 方便覆盖样式
-/* 页面渲染的根容器 */
 #root {
 	height: 100%;
-	 /* 跟组件的容器 */
     .App {    	
     		height: 100%;
-    		/* antd的布局容器 */
         .ant-layout {
         		height: 100%;
-            /* 头部区域的样式 */
             .ant-layout-header {
                 background-color: #9acd32;
-                /* 设置头部logo图标的样式 */
-             
+                .logo {
+                    width: 120px;
+                    height: 40px;
+                    background-image: url(http://8558500.s21i-8.faiusr.com/4/ABUIABAEGAAgwquwvQUokI2GzQQwwgM4lgE.png);
+                    background-size: 120px 40px;
+                    float: left;
+                    margin-top: 12px;
+                    margin-right: 20px;
+                }
                 .ant-menu {
-                    /* 设置菜单背景色透明 */
                     background-color: transparent;
                     .ant-menu-item {
                         color: #fff;
                         border-bottom: 0px;
-                        /* 当li被选中的时候的样式 */
                         &.ant-menu-item-selected {
-                            background-color: #1da57a;
+                            background-color: #1da5aa;
+                            a {
+                                color: #000000
+                            }
                         }
                     }
                 }
             }
-            /* 中内容部分的样式 */
             .ant-layout-content {
                 height: 100%;
                 background-color: #eee;
                 text-align:left;
             }
-            /* 底部布局的样式 */
-           	.ant-layout-footer{
-           		background-color: #ccc;
-           	}
         }
     }
 }
