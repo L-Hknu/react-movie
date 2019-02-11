@@ -31,8 +31,8 @@ class App extends Component {
             </Menu>
           </Header>
           <Content >
-              <Route exact path='/' component={Home}></Route>
-              <Route path='/movie' component={Movie}></Route>
+              <Route path='/' component={Home}></Route>
+              <Route exact path='/movie' component={Movie}></Route>
               <Route path='/ahout' component={About}></Route>
           </Content>
           {/* <Footer style={{ textAlign: 'center' }}>
